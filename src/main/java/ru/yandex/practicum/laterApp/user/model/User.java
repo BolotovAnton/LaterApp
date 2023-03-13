@@ -39,5 +39,6 @@ public class User {
     @OneToMany(mappedBy = "user")
     private Set<Item> items;
 
+    @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 }
